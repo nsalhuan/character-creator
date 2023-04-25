@@ -34,4 +34,50 @@
 
 .controlColumn {
   width: 50%;
+  position: relative;
+}
+
+.perspective {
+  position: fixed;
+  top: 60%;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background-color: hsl(195deg, 20%, 86%);
+}
+
+@media (max-width: 400px) {
+  .header {
+    display: none;
+  }
+
+  .characterWrapper {
+    position: fixed;
+    top: 5%;
+    left: 0px;
+    height: 80%
+  }
+
+  .controlColumn {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 55%;
+
+    overflow-x: auto;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding: 0px 16px;
+  }
+
+  .controlColumn > div {
+    margin-right: 15px;
+  }
+
+  .controlColumn > div:last-child {
+    margin-right: 0px;
+  }
+  
 }

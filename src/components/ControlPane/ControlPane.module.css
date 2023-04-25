@@ -10,8 +10,6 @@
     to deal with it yet!
   */
   margin-bottom: 32px;
-
-  overflow-x: auto;
 }
 
 .title {
@@ -25,4 +23,11 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+@media (max-width: 400px) {
+  .controlPane {
+    min-width: 330px;
+  }
+  
 }
